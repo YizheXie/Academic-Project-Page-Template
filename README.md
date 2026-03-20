@@ -2,6 +2,10 @@
 
 This project is a static academic project page template. The page content is driven by JSON, Markdown, media files, and a BibTeX file, so adapting it to a new paper mainly means updating content rather than rewriting the page shell.
 
+## Examples
+
+1. https://yizhexie.github.io/From-Spark-to-Fire-Page/
+
 ## Local Preview
 
 Run a local static server in the project root:

@@ -2,6 +2,10 @@
 
 这个项目是一个静态学术论文主页模板。页面内容由 JSON、Markdown、媒体文件和 BibTeX 文件驱动，所以换论文时，主要是更新内容，不需要重写页面骨架。
 
+## 一些例子
+
+1. https://yizhexie.github.io/From-Spark-to-Fire-Page/
+
 ## 本地预览
 
 在项目根目录运行：
