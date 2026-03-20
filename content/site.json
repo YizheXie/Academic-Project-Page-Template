@@ -1,0 +1,155 @@
+{
+  "siteMark": "Academic Project Page",
+  "title": "Paper Title: An Easy-to-use Academic Project Page Template",
+  "subtitle": "Conference or Journal Name, 20XX",
+  "venue": "",
+  "year": null,
+  "seo": {
+    "siteUrl": "",
+    "indexable": false,
+    "description": "A reusable academic project page template with JSON-driven metadata, Markdown sections, image sliders, optional video embeds, and BibTeX support.",
+    "image": "content/media/template-figure.svg",
+    "keywords": [
+      "academic project page",
+      "paper website template",
+      "research project page",
+      "static academic template",
+      "markdown paper website",
+      "json-driven project page"
+    ]
+  },
+  "authors": [
+    {
+      "name": "First Author",
+      "affiliation": "University A",
+      "marker": "*"
+    },
+    {
+      "name": "Second Author",
+      "affiliation": "University B",
+      "marker": "\u2020"
+    },
+    {
+      "name": "Third Author",
+      "affiliation": "Research Lab C",
+      "marker": "*"
+    }
+  ],
+  "links": [],
+  "hero": {
+    "eyebrow": "Academic Project Page",
+    "highlight": "",
+    "authorNote": "",
+    "titleLines": [
+      "Paper Title: An Easy-to-use",
+      "Academic Project Page Template"
+    ],
+    "affiliationLine": [
+      {
+        "marker": "*",
+        "text": "University A"
+      },
+      {
+        "marker": "\u2020",
+        "text": "University B"
+      },
+      {
+        "marker": "*",
+        "text": "Research Lab C"
+      }
+    ],
+    "teaser": {
+      "src": "content/media/template-figure.svg",
+      "alt": "A simple placeholder figure used by the template.",
+      "caption": ""
+    }
+  },
+  "sections": [
+    {
+      "id": "abstract",
+      "title": "Abstract",
+      "markdown": "content/sections/abstract.md",
+      "layout": "text",
+      "media": [],
+      "showIndex": false,
+      "titleAlign": "center",
+      "enabled": true
+    },
+    {
+      "id": "overview",
+      "title": "Overview",
+      "markdown": "content/sections/overview.md",
+      "layout": "text",
+      "mediaDisplay": "stack",
+      "media": [
+        {
+          "kind": "figure",
+          "src": "content/media/template-figure.svg",
+          "alt": "A simple placeholder figure used in the overview section."
+        }
+      ],
+      "enabled": true
+    },
+    {
+      "id": "method",
+      "title": "Method",
+      "markdown": "content/sections/method.md",
+      "layout": "text",
+      "mediaDisplay": "stack",
+      "media": [
+        {
+          "kind": "figure",
+          "src": "content/media/template-figure.svg",
+          "alt": "A simple placeholder figure used in the method section."
+        }
+      ],
+      "enabled": true
+    },
+    {
+      "id": "results",
+      "title": "Results",
+      "markdown": "content/sections/results.md",
+      "layout": "text",
+      "mediaDisplay": "slider",
+      "media": [
+        {
+          "kind": "figure",
+          "src": "content/media/template-figure.svg",
+          "alt": "A simple placeholder figure used in the results section."
+        },
+        {
+          "kind": "figure",
+          "src": "content/media/template-figure.svg",
+          "alt": "A simple placeholder figure used in the results section."
+        },
+        {
+          "kind": "figure",
+          "src": "content/media/template-figure.svg",
+          "alt": "A simple placeholder figure used in the results section."
+        }
+      ],
+      "enabled": true
+    },
+    {
+      "id": "video",
+      "title": "Video",
+      "markdown": "content/sections/video.md",
+      "layout": "text",
+      "video": {
+        "src": "content/media/demo.mp4",
+        "title": "Project video",
+        "ratio": "16 / 9",
+        "caption": "This section is currently configured to play the local sample file content/media/demo.mp4.",
+        "controls": true
+      },
+      "enabled": true
+    }
+  ],
+  "bibtexPath": "content/paper.bib",
+  "footer": {
+    "label": "Released under the MIT License.",
+    "href": "LICENSE",
+    "note": "When you start adapting this template to your own paper, you can update the sample content and switch seo.indexable to true."
+  },
+  "contact": null
+}

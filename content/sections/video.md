@@ -1,0 +1,1 @@
+This section can be used for a talk video, a demo video, or a recorded presentation. The template is currently configured with the local sample file `content/media/demo.mp4`, so you can see the self-hosted video option directly on the page. If you prefer, you can also switch this section to a YouTube or Vimeo embed in `content/site.json`.

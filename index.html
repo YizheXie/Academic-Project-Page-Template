@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Academic Project Page Template</title>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <meta
+      name="description"
+      content="A reusable academic project page template with JSON-driven metadata, Markdown sections, image sliders, optional video embeds, and BibTeX support."
+    >
+    <meta
+      name="keywords"
+      content="academic project page, paper website template, research project page, static academic template, markdown paper website, json-driven project page"
+    >
+    <meta name="robots" content="noindex,nofollow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Academic Project Page Template">
+    <meta property="og:description" content="A reusable academic project page template with JSON-driven metadata, Markdown sections, image sliders, optional video embeds, and BibTeX support.">
+    <meta property="og:image" content="content/media/template-figure.svg">
+    <meta property="og:image:alt" content="A simple placeholder figure used by the template.">
+    <meta property="article:tag" content="academic project page">
+    <meta property="article:tag" content="paper website template">
+    <meta property="article:tag" content="research project page">
+    <meta property="article:tag" content="video embed">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Academic Project Page Template">
+    <meta name="twitter:description" content="A reusable academic project page template with JSON-driven metadata, Markdown sections, image sliders, optional video embeds, and BibTeX support.">
+    <meta name="twitter:image" content="content/media/template-figure.svg">
+
+    <script type="application/ld+json" id="structured-data">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Academic Project Page Template",
+        "description": "A reusable academic project page template with JSON-driven metadata, Markdown sections, optional image sliders, optional video embeds, and BibTeX support."
+      }
+    </script>
+    <script>
+      (() => {
+        const version = Date.now().toString()
+        const showLoaderError = (message) => {
+          window.addEventListener(
+            "DOMContentLoaded",
+            () => {
+              const status = document.getElementById("status-banner")
+              if (status) {
+                status.hidden = false
+                status.textContent = message
+              }
+            },
+            { once: true }
+          )
+        }
+
+        const style = document.createElement("link")
+        style.rel = "stylesheet"
+        style.href = `assets/styles.css?v=${version}`
+        document.head.appendChild(style)
+
+        const katexStyle = document.createElement("link")
+        katexStyle.rel = "stylesheet"
+        katexStyle.href = `assets/vendor/katex/katex.min.css?v=${version}`
+        document.head.appendChild(katexStyle)
+
+        const loadApp = () => {
+          const appScript = document.createElement("script")
+          appScript.src = `assets/app.js?v=${version}`
+          appScript.onerror = () => showLoaderError("Could not load assets/app.js.")
+          document.head.appendChild(appScript)
+        }
+
+        const markedScript = document.createElement("script")
+        markedScript.src = `assets/vendor/marked.min.js?v=${version}`
+        markedScript.onload = () => {
+          const katexScript = document.createElement("script")
+          katexScript.src = `assets/vendor/katex/katex.min.js?v=${version}`
+          katexScript.onload = loadApp
+          katexScript.onerror = loadApp
+          document.head.appendChild(katexScript)
+        }
+        markedScript.onerror = () => showLoaderError("Could not load assets/vendor/marked.min.js.")
+        document.head.appendChild(markedScript)
+      })()
+    </script>
+  </head>
+  <body class="page-shell is-loading">
+    <div class="page-backdrop" aria-hidden="true"></div>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="site-mark" href="#top">Academic Project Page</a>
+        <nav class="site-nav" id="site-nav" aria-label="Section navigation"></nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <div class="container">
+        <div class="status-banner" id="status-banner" role="status" aria-live="polite">
+          Loading project page content...
+        </div>
+      </div>
+      <section class="seo-fallback" aria-label="Paper summary">
+        <div class="container">
+          <article class="seo-fallback__card" itemscope itemtype="https://schema.org/CreativeWork">
+            <p class="seo-fallback__eyebrow">Project Page</p>
+            <h1 class="seo-fallback__title" itemprop="headline">Paper Title: An Easy-to-use Academic Project Page Template</h1>
+            <p class="seo-fallback__authors">First Author, Second Author, Third Author</p>
+            <p class="seo-fallback__affiliations">
+              University A<br>
+              University B<br>
+              Research Lab C
+            </p>
+            <div class="seo-fallback__abstract">
+              <h2>Abstract</h2>
+              <p itemprop="description">
+                This template keeps page metadata, section text, media assets, and citation data in separate files, so it is easy to adapt the page to a new paper with small edits. You can use this paragraph as a starting point for your own abstract.
+              </p>
+              <p class="seo-fallback__keywords"><strong>Keywords:</strong> keyword one, keyword two, keyword three, keyword four, and keyword five.</p>
+            </div>
+            <div class="seo-fallback__summary">
+              <p><strong>Template note.</strong> When you begin adapting this page to your own paper, you can update the JSON metadata, Markdown sections, media files, and BibTeX entry at your own pace.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+      <div id="app"></div>
+    </main>
+
+    <noscript>
+      <div class="container">
+        <section class="noscript-panel">
+          JavaScript helps this template load JSON, Markdown, and BibTeX files directly in the
+          browser.
+        </section>
+      </div>
+    </noscript>
+  </body>
+</html>

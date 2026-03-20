@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="720" viewBox="0 0 1440 720" role="img" aria-labelledby="title desc">
+  <title id="title">Figure placeholder</title>
+  <desc id="desc">A simple blank placeholder image for the academic project page template.</desc>
+  <rect width="1440" height="720" fill="#f7f3ea"/>
+  <rect x="72" y="72" width="1296" height="576" rx="28" fill="#fcfaf4" stroke="#cfc6b6" stroke-width="4" stroke-dasharray="16 14"/>
+  <text x="720" y="330" text-anchor="middle" fill="#7a8178" font-family="IBM Plex Sans, Arial, sans-serif" font-size="34" letter-spacing="6">
+    FIGURE PLACEHOLDER
+  </text>
+  <text x="720" y="392" text-anchor="middle" fill="#9aa096" font-family="IBM Plex Sans, Arial, sans-serif" font-size="24">
+    Replace this file with your own image
+  </text>
+</svg>

@@ -1,0 +1,12 @@
+# Academic Project Page Template
+
+This site is a reusable academic project page template. You can update the sample title, authors, abstract, figures, video settings, and BibTeX before publishing it for a real paper.
+
+Keywords: academic project page, paper website template, research project page, static academic template, optional video section, image slider
+
+Resources:
+- Main page: /
+- JSON config: /content/site.json
+- Sections: /content/sections/
+- Media: /content/media/
+- BibTeX: /content/paper.bib
