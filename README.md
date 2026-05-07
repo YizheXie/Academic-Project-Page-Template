@@ -4,7 +4,7 @@ This project is a static academic project page template. The page content is dri
 
 ## Examples
 
-1. https://yizhexie.github.io/From-Spark-to-Fire-Page/
+
 
 ## Local Preview
 
